@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import "../styles/Footer.css";
 
 const Footer = () => {
-  // Function to open WhatsApp chat with pre-filled message
   const openWhatsAppChat = () => {
     const phoneNumber = '+2348026151366';
     const message = encodeURIComponent("Hi DevTaiwo");
@@ -22,13 +21,13 @@ const Footer = () => {
           </ul>
           <div className="social-icons">
             <div className="icon-div">
-              <a href="https://twitter.com"><i className="fab fa-twitter"></i></a>
+              <a href="https://wa.me/+2348026151366"><i className="fab fa-whatsapp"></i></a>
             </div>
             <div className="icon-div">
               <a href="https://facebook.com"><i className="fab fa-facebook-f"></i></a>
             </div>
             <div className="icon-div">
-              <a href="https://youtube.com"><i className="fab fa-youtube"></i></a>
+              <a href="https://instagram.com"><i className="fab fa-instagram"></i></a>
             </div>
           </div>
         </div>
