@@ -243,7 +243,7 @@
 }
 
 .navbar-content {
-    position: fixed;
+    position: fixed !important;
     top: 0;
     left: 0;
     bottom: 0;
@@ -251,6 +251,7 @@
     max-width: 300px;
     background-color: #F5F5DC;
     overflow-y: auto;
+    height: 100%;
     padding: 20px;
 }
 
