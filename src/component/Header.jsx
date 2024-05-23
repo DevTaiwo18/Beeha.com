@@ -2,13 +2,19 @@ import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/BEEHA LAGOS.png';
 import "../styles/Header.css";
+import { useAuthContext } from '../context/authContext';
 
 const Header = () => {
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { token, logout } = useAuthContext();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleLogout = () => {
+    logout();
+    toggleMenu();
   };
 
   return (
@@ -30,9 +36,19 @@ const Header = () => {
         </div>
         <div className="logCart">
           <div className="logReg">
-            <Link to="/sign-in" className="logReg-link">Login</Link>
-            <span>/</span>
-            <Link to="/sign-up" className="logReg-link">Register</Link>
+            {token ? (
+              <>
+                <Link to="/my-account" className="logReg-link">My Account</Link>
+                <span>/</span>
+                <button onClick={handleLogout} className="logReg-link">Logout</button>
+              </>
+            ) : (
+              <>
+                <Link to="/sign-in" className="logReg-link">Login</Link>
+                <span>/</span>
+                <Link to="/sign-up" className="logReg-link">Register</Link>
+              </>
+            )}
           </div>
           <div className="cart-container">
             <Link to="/cart" className="cart-link">
@@ -58,7 +74,7 @@ const Header = () => {
       </nav>
       {/* nav two */}
 
-
+      {/* mobile nav */}
       <nav className="mobile-nav">
         <Link to="/">
           <img src={logo} alt="Logo" className="logo" />
@@ -102,8 +118,17 @@ const Header = () => {
             <li><Link to="/cart" className="nav-link" onClick={toggleMenu}><i className="fa fa-shopping-cart"></i> Cart</Link></li>
             <li><Link to="/privacy-policy" className="nav-link" onClick={toggleMenu}><i className="fa fa-user-secret"></i> Privacy Policy</Link></li>
             <li><Link to="/faq" className="nav-link" onClick={toggleMenu}><i className="fa fa-question-circle"></i> FAQ</Link></li>
-            <li><Link to="/sign-in" className="nav-link" onClick={toggleMenu}><i className="fa fa-sign-in-alt"></i> Login</Link></li>
-            <li><Link to="/sign-up" className="nav-link" onClick={toggleMenu}><i className="fa fa-user-plus"></i> Register</Link></li>
+            {token ? (
+              <>
+                <li><Link to="/my-account" className="nav-link" onClick={toggleMenu}><i className="fa fa-user"></i> My Account</Link></li>
+                <li><Link className='nav-link' onClick={handleLogout}><i className="fa fa-sign-out-alt"></i> Logout</Link></li>
+              </>
+            ) : (
+              <>
+                <li><Link to="/sign-in" className="nav-link" onClick={toggleMenu}><i className="fa fa-sign-in-alt"></i> Login</Link></li>
+                <li><Link to="/sign-up" className="nav-link" onClick={toggleMenu}><i className="fa fa-user-plus"></i> Register</Link></li>
+              </>
+            )}
             <li><Link to="/about-us" className="nav-link" onClick={toggleMenu}><i className="fa fa-info-circle"></i> About Us</Link></li>
             <li><Link to="/contact-us" className="nav-link" onClick={toggleMenu}><i className="fa fa-envelope"></i> Contact Us</Link></li>
           </ul>

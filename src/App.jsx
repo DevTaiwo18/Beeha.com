@@ -16,6 +16,8 @@ import Signup from './pages/Signup';
 import Login from './pages/Login';
 import Faq from './pages/Faq';
 import './App.css';
+import ProtectedRoutes from './context/ProtectedRoutes';
+import AuthProvider from './context/authContext';
 
 const App = () => {
   const location = useLocation();
@@ -37,8 +39,10 @@ const App = () => {
         <Route path="/sign-up" element={<Signup />} />
         <Route path="/sign-in" element={<Login />} />
         <Route path="/faq" element={<Faq />} />
-        <Route path="/address" element={<Address />} />
-        <Route path="/myaccont" element={<Myaccount />} />
+        <Route element={<ProtectedRoutes />}>
+          <Route path="/address" element={<Address />} />
+          <Route path="/myaccont" element={<Myaccount />} />
+        </Route>
         <Route path="*" element={<Four404 />} />
       </Routes>
       {shouldShowHeaderFooter && <Footer />}
@@ -48,7 +52,9 @@ const App = () => {
 
 const AppWrapper = () => (
   <Router>
-    <App />
+    <AuthProvider>
+      <App />
+    </AuthProvider>
   </Router>
 );
 
