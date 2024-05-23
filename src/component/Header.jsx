@@ -38,7 +38,7 @@ const Header = () => {
           <div className="logReg">
             {token ? (
               <>
-                <Link to="/my-account" className="logReg-link">My Account</Link>
+                <Link to="/myaccont" className="logReg-link">My Account</Link>
                 <span>/</span>
                 <button onClick={handleLogout} className="logReg-link">Logout</button>
               </>
@@ -120,7 +120,7 @@ const Header = () => {
             <li><Link to="/faq" className="nav-link" onClick={toggleMenu}><i className="fa fa-question-circle"></i> FAQ</Link></li>
             {token ? (
               <>
-                <li><Link to="/my-account" className="nav-link" onClick={toggleMenu}><i className="fa fa-user"></i> My Account</Link></li>
+                <li><Link to="/myaccont" className="nav-link" onClick={toggleMenu}><i className="fa fa-user"></i> My Account</Link></li>
                 <li><Link className='nav-link' onClick={handleLogout}><i className="fa fa-sign-out-alt"></i> Logout</Link></li>
               </>
             ) : (

@@ -47,7 +47,7 @@ const Login = () => {
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
           {token ? (
             <div className="text-center">
-              <Link to="/my-account" className="font-medium text-brandBrown hover:text-opacity-90">
+              <Link to="/myaccont" className="font-medium text-brandBrown hover:text-opacity-90">
                 My Account
               </Link>
               <button
