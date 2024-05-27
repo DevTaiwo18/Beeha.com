@@ -21,7 +21,7 @@ const Footer = () => {
           </ul>
           <div className="social-icons">
             <div className="icon-div">
-              <a href="https://www.tiktok.com/@Beeha.official" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.tiktok.com/@beeha.official" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-tiktok"></i>
               </a>
             </div>
