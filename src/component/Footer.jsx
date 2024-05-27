@@ -21,13 +21,14 @@ const Footer = () => {
           </ul>
           <div className="social-icons">
             <div className="icon-div">
-              <a href="https://wa.me/+2348026151366"><i className="fab fa-whatsapp"></i></a>
+              <a href="https://www.tiktok.com/@Beeha.official" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-tiktok"></i>
+              </a>
             </div>
             <div className="icon-div">
-              <a href="https://facebook.com"><i className="fab fa-facebook-f"></i></a>
-            </div>
-            <div className="icon-div">
-              <a href="https://instagram.com"><i className="fab fa-instagram"></i></a>
+              <a href="https://www.instagram.com/beehaofficial" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-instagram"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -46,9 +47,6 @@ const Footer = () => {
           <a href="#" onClick={openWhatsAppChat}>
             <i className="fab fa-whatsapp"></i> Made by DevTaiwo
           </a>
-        </div>
-        <div className="footer-right">
-          <p></p>
         </div>
       </div>
     </footer>
