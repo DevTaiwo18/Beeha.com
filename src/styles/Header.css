@@ -305,4 +305,11 @@
     .mobile-menu {
         display: flex;
     }
+
+    .search-input-mobile {
+        width: 100%;
+        max-width: 300px; 
+        height: 40px; 
+    }
+    
 }

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/BEEHA LAGOS.png';
 import "../styles/Header.css";
+import "../App.css";
 import { useAuthContext } from '../context/authContext';
 
 const Header = () => {

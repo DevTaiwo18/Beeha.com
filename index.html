@@ -21,6 +21,8 @@
 
   <!-- font awesome link -->
 
+  <link rel="preload" as="image"
+    href="https://res.cloudinary.com/dohvgtnre/image/upload/v1716969872/n6ylksdszblbwzfeh9be.jpg">
 
 </head>
 
@@ -28,5 +30,16 @@
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
 </body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var productsSection = document.querySelector('.products-section');
+    var productImage = document.createElement('img');
+    productImage.src = "https://res.cloudinary.com/dohvgtnre/image/upload/v1716969872/n6ylksdszblbwzfeh9be.jpg";
+    productImage.alt = "A timeless classic, this white shirt is perfect for any occasion. Made from high-quality cotton for ultimate comfort and durability.";
+    productImage.className = "product-image";
+    productsSection.appendChild(productImage);
+  });
+</script>
 
 </html>
