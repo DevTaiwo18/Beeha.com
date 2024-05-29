@@ -28,7 +28,7 @@ const Category = () => {
   };
 
   return (
-    <div className="products-section flex flex-col items-center p-3 lg:p-10 bg-gray-100">
+    <div className="products-section flex flex-col items-center p-3 lg:p-10 bg-[#F5F5DC]">
       <h2 className="text-2xl md:text-4xl font-md mb-2">Our Products</h2>
       <p className="text-gray-600 font-small mb-8 text-center text-sm">Explore our chic and timeless designs, crafted with elegance and sophistication.</p>
       <div className="flex space-x-4 mb-7">
