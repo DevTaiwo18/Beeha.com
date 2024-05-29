@@ -70,6 +70,10 @@
     font-size: 14px;
 }
 
+.products-section {
+    min-height: 500px;
+}
+
 .load-more {
     text-align: center;
     margin-top: 30px;

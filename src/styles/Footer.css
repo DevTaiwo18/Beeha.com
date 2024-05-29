@@ -2,6 +2,7 @@
     padding: 10px 40px;
     background-color: #000;
     color: white;
+    min-height: 150px; 
 }
 
 .footer-div1 {

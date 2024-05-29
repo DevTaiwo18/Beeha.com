@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useProductContext } from '../context/ProductContext';
 import ProductGrid from './ProductGrid';
+import '../styles/ProductGrid.css';
+
 
 const categories = ['Cloth', 'Bags', 'Shoes'];
 

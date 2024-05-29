@@ -5,3 +5,10 @@
     font-family: "Helvetica Neue", sans-serif;
     text-decoration: none;
 }
+
+.products-section,
+.footer-section,
+.search-box,
+.logCart {
+    contain: layout paint;
+}
