@@ -18,6 +18,7 @@ import Faq from './pages/Faq';
 import './App.css';
 import ProtectedRoutes from './context/ProtectedRoutes';
 import AuthProvider from './context/authContext';
+import ProductProvider from './context/ProductContext';
 
 const App = () => {
   const location = useLocation();
@@ -53,7 +54,9 @@ const App = () => {
 const AppWrapper = () => (
   <Router>
     <AuthProvider>
-      <App />
+      <ProductProvider>
+        <App />
+      </ProductProvider>
     </AuthProvider>
   </Router>
 );
