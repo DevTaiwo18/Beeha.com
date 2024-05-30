@@ -27,7 +27,7 @@ export default function Paginationhome() {
       >
         <SwiperSlide>
           <div className="swiper-slide-content">
-            <img src={image1} alt="Slide 2" class="swiper-slide-image" width="1920" height="1080" />
+            <img src={image1} alt="Slide 2" className="swiper-slide-image" width="1920" height="1080" />
             <div className="slider_content">
               <h1>Game of Thrones Jaime Lannister</h1>
               <h2>Themed Sneakers</h2>
@@ -37,7 +37,7 @@ export default function Paginationhome() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="swiper-slide-content">
-            <img src={image2} alt="Slide 3" class="swiper-slide-image w-full h-full object-cover" width="1920" height="1080" />
+            <img src={image2} alt="Slide 3" className="swiper-slide-image w-full h-full object-cover" width="1920" height="1080" />
             <div className="slider_content">
               <h1>Well-made & thoughtfully designed</h1>
               <h2>This briefcase is the last one you’ll ever buy</h2>
@@ -47,7 +47,7 @@ export default function Paginationhome() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="swiper-slide-content">
-            <img src={image3} alt="Slide 1" class="swiper-slide-image" width="1920" height="1080" />
+            <img src={image3} alt="Slide 1" className="swiper-slide-image" width="1920" height="1080" />
             <div className="slider_content">
               <h1 className=" text-black gg">Elegant & Versatile Fashion Choices</h1>
               <h2 className=" text-black gg">Fashion that adapts to any occasion</h2>

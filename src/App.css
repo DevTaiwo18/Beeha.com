@@ -12,3 +12,12 @@
 .logCart {
     contain: layout paint;
 }
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('https://fonts.cdnfonts.com/fonts/helvetica-neue-55/HelveticaNeue-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

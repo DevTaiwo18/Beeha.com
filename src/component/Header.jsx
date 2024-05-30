@@ -59,20 +59,6 @@ const Header = () => {
       </nav>
       {/* nav one */}
 
-      {/* nav two */}
-      <nav className="nav2">
-        <ul>
-          <li><Link to="/" className="nav-link">Home</Link></li>
-          <li><Link to="/shop" className="nav-link">Shop</Link></li>
-          <li><Link to="/cart" className="nav-link">Cart</Link></li>
-          <li><Link to="/privacy-policy" className="nav-link">Privacy Policy</Link></li>
-          <li><Link to="/faq" className="nav-link">FAQ</Link></li>
-          <li><Link to="/about-us" className="nav-link">About Us</Link></li>
-          <li><Link to="/contact-us" className="nav-link">Contact Us</Link></li>
-        </ul>
-      </nav>
-      {/* nav two */}
-
       {/* mobile nav */}
       <nav className="mobile-nav">
         <Link to="/">
@@ -115,8 +101,6 @@ const Header = () => {
             <li><Link to="/" className="nav-link" onClick={toggleMenu}><i className="fa fa-home"></i> Home</Link></li>
             <li><Link to="/shop" className="nav-link" onClick={toggleMenu}><i className="fa fa-store"></i> Shop</Link></li>
             <li><Link to="/cart" className="nav-link" onClick={toggleMenu}><i className="fa fa-shopping-cart"></i> Cart</Link></li>
-            <li><Link to="/privacy-policy" className="nav-link" onClick={toggleMenu}><i className="fa fa-user-secret"></i> Privacy Policy</Link></li>
-            <li><Link to="/faq" className="nav-link" onClick={toggleMenu}><i className="fa fa-question-circle"></i> FAQ</Link></li>
             {token ? (
               <>
                 <li><Link to="/myaccont" className="nav-link" onClick={toggleMenu}><i className="fa fa-user"></i> My Account</Link></li>
@@ -128,8 +112,6 @@ const Header = () => {
                 <li><Link to="/sign-up" className="nav-link" onClick={toggleMenu}><i className="fa fa-user-plus"></i> Register</Link></li>
               </>
             )}
-            <li><Link to="/about-us" className="nav-link" onClick={toggleMenu}><i className="fa fa-info-circle"></i> About Us</Link></li>
-            <li><Link to="/contact-us" className="nav-link" onClick={toggleMenu}><i className="fa fa-envelope"></i> Contact Us</Link></li>
           </ul>
         </nav>
       </div>
